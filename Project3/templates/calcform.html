@@ -1,0 +1,51 @@
+<title>Form</title>
+<link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIKLRws9cvnhxXQCh8s2agVxOhRF8G_XEzyZD93LGQcw&s" type="image/x-icon">
+<link rel="stylesheet" href="/static/css/calc.css"> 
+<link rel="stylesheet" href="/static/css/buton.css">     
+ <body bgcolor="black">
+<form method="post">
+  {% csrf_token %}
+  <h2 style="color: red;">Form</h2>
+  <div class="input-container">
+    <i class="fa fa-user icon"></i>
+    <input class="input-field" type="text" name="v1">
+  </div>
+
+  <div class="input-container">
+    <i class="fa fa-envelope icon"></i>
+    <input class="input-field" type="text" name="v2">
+  </div>
+  <button type="submit" class="btn">Calculate</button>
+  <div class="input-container">
+    <i class="fa fa-key icon"></i>
+    <input class="input-field" type="text" value="{{op}}">
+  </div>
+
+
+</form>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div>
+    <a href="{% url 'table' %}">&#8592; Previous</a>
+    <a href="{% url 'redrct' %}">Next &rarr;</a>
+</div>

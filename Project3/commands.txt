@@ -1,0 +1,15 @@
+source video - https://youtu.be/6tdfhlIoxOw?si=Mkkt_QE_eYL6LkZ7  https://youtu.be/_uQrJ0TkZlc?si=R2FtfuJneizJZS3H
+to start a new project - django-admin startproject project_name (example django-admin startproject demo)
+to run dev server - python manage.py runserver
+to run dev server on specific port number - python manage.py runserver port_number (example python manage.py runserver 3443)
+templates - all the html file are stored in this folder (we have to create this folder explicitly)
+static - all the js, css and font files are stored in this folder (we have to create this folder explicitly)
+media - all the dynamic files and image are stored in this folder (we have to create this folder explicitly)
+to create superuser - python manage.py createsuperuser
+urls.py - this file contains all urls
+views.py - this file contains all views
+{% include "html_file" %} - to include (example header and footer file) in main index.html file
+{% include "header.html" %} - updated version of include tag(does samething as include but more efficiently)
+{% block content%} - updated version of include tag(does samething as include but more efficiently)
+{% endblock %} - updated version of include tag(does samething as include but more efficiently)
+{% include "footer.html" %} - updated version of include tag(does samething as include but more efficiently)

@@ -1,0 +1,58 @@
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect</title>
+    <link rel="shortcut icon" href="https://cdn.icon-icons.com/icons2/2436/PNG/512/redirect_link_anchor_icon_147446.png" type="image/x-icon">
+    <link rel="stylesheet" href="/static/css/refire.css">  
+    <link rel="stylesheet" href="/static/css/buton.css">
+    <link rel="stylesheet" href="/static/css/calc.css"> 
+      
+</head>
+<div class=content>
+    <div class="wrapper-1">
+      <div class="wrapper-2">
+        <h1>Thank you !</h1>
+    
+        <button class="go-home">
+        Redirect
+        </button>
+   
+      </div>
+  
+  </div>
+  </div>
+  
+  
+  
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Source+Sans+Pro" rel="stylesheet">
+
+  <form method="post">
+    {% csrf_token %}
+    <h2 style="color: red;">Redirect Example</h2>
+    <div class="input-container">
+      <i class="fa fa-user icon"></i>
+      <input class="input-field" type="text" name="v1">
+    </div>
+  
+    <div class="input-container">
+      <i class="fa fa-envelope icon"></i>
+      <input class="input-field" type="text" name="v2">
+    </div>
+    <button type="submit" class="btn">Calculate</button>
+    <div class="input-container">
+      <i class="fa fa-key icon"></i>
+      <input class="input-field" type="text" value="{{op}}">
+    </div>
+  
+  
+  </form>
+<br>
+<br>
+<br>
+
+<div>
+    <a href="{% url 'form' %}">&#8592; Previous</a>
+    <a href="{% url 'th' %}">Next &rarr;</a>
+</div>

@@ -1,0 +1,49 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcJHPLVZxxLwI9JpDGpsyIkcNNMfEKSUcNbUwxYjTwvw&s" type="image/x-icon">
+    <link rel="stylesheet" href="/static/css/table.css">
+    <link rel="stylesheet" href="/static/css/buton.css">
+</head>
+<section>
+    <!--for demo wrap-->
+    <h1>Fixed Table header</h1>
+    <div class="tbl-header">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Phone</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+    <div class="tbl-content">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tbody>
+        {% for i in stud %}
+          <tr>
+            <td>{{i.name}}</td>
+            <td>{{i.phone}} </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<div>
+    <a href="{% url 'home' %}">&#8592; Previous</a>
+    <a href="{% url 'form' %}">Next &rarr;</a>
+</div>
+  
+  
